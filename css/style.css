@@ -3,12 +3,30 @@ ul {
     margin: 0;
     padding: 0;
 }
-.page-link{
-    display: block;
-    font-size: 24px;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-}
+/* Pages */
+
+  .page-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 10px;
+        }
+        .page-links li {
+            background-color: #f0f0f0;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+        .page-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .page-links a:hover {
+            color: #007BFF;
+        }
+
+/* Task 1 */
 
 #categories{
     display:flex;
@@ -44,6 +62,7 @@ ul {
     padding: 8px 16px;
 }
 
+/* Task 2 */
 .gallery{
     display: flex;
     flex-direction: row;
@@ -62,6 +81,7 @@ ul {
     height: 100%;
 }
 
+/* Task 3 */
 input{
     width: 360px;
     height: 40px;
@@ -144,4 +164,21 @@ button[data-destroy]:hover{
     margin-top: 16px;
     width: 100%;
     flex-wrap: wrap;
+}
+
+.back-link {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #007BFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-bottom: 8px;
+}
+
+.back-link:hover {
+    background-color: #0056b3;
 }
